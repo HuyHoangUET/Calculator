@@ -83,7 +83,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZl-22-O1t">
                                                         <rect key="frame" x="0.0" y="217" width="374" height="104.5"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFu-5v-fVd">
+                                                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFu-5v-fVd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="104.5"/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -345,7 +345,7 @@
                                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="78.5"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <connections>
-                                                                            <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vdo-ik-lQD"/>
+                                                                            <action selector="selectedMultiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3mx-Ih-4dc"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -769,6 +769,12 @@
                             <constraint firstItem="sCv-NF-Heb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gD4-hJ-xt0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="CFu-5v-fVd" id="hUJ-xx-16k"/>
+                        <outlet property="numNewLabel" destination="Mwx-Jv-Bs1" id="zjM-uD-iMk"/>
+                        <outlet property="numOldLabel" destination="KXU-hu-gfj" id="41h-zJ-4qs"/>
+                        <outlet property="operatorLabel" destination="W27-Rq-elC" id="Lbd-Rc-IzJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
